@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" id="iN0-l3-epB" customClass="ReceiptHeader" customModule="DPCore" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="154"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" semanticContentAttribute="forceRightToLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="شارژ همراه اول" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AyJ-3M-LMJ">
+                    <rect key="frame" x="16" y="46" width="343" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="NUy-Dg-xVW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" semanticContentAttribute="forceRightToLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ریال ۲۰۰.۰۰۰" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m9p-rw-JRt">
+                    <rect key="frame" x="16" y="79" width="343" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" translatesAutoresizingMaskIntoConstraints="NO" id="1ck-cC-XuT">
+                    <rect key="frame" x="0.0" y="153" width="375" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="aOA-Cq-NPA"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="dividerColor">
+                            <color key="value" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" semanticContentAttribute="forceRightToLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="۰۹۳۹ ۴۶۷ ۳۹۱۶" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEl-kQ-Wb8">
+                    <rect key="frame" x="16" y="116" width="343" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="1ck-cC-XuT" secondAttribute="bottom" id="01T-0P-evR"/>
+                <constraint firstItem="1ck-cC-XuT" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="8M5-Z6-RdK"/>
+                <constraint firstItem="m9p-rw-JRt" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="E18-jc-XRs"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="sEl-kQ-Wb8" secondAttribute="trailing" constant="16" id="MUc-9b-Uhj"/>
+                <constraint firstItem="sEl-kQ-Wb8" firstAttribute="top" secondItem="m9p-rw-JRt" secondAttribute="bottom" constant="16" id="NTx-7Y-qbI"/>
+                <constraint firstItem="m9p-rw-JRt" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="NnS-nM-4gQ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="m9p-rw-JRt" secondAttribute="trailing" constant="16" id="OIS-K2-pZH"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1ck-cC-XuT" secondAttribute="trailing" id="PuH-WO-3Xo"/>
+                <constraint firstItem="m9p-rw-JRt" firstAttribute="top" secondItem="AyJ-3M-LMJ" secondAttribute="bottom" constant="12" id="Zi0-jE-yvL"/>
+                <constraint firstItem="sEl-kQ-Wb8" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="bEE-QB-z1v"/>
+                <constraint firstItem="sEl-kQ-Wb8" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="bQ5-fa-5nS"/>
+                <constraint firstItem="AyJ-3M-LMJ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="d3O-HE-f2s"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="AyJ-3M-LMJ" secondAttribute="trailing" constant="16" id="rVc-Pc-Po2"/>
+                <constraint firstAttribute="trailing" secondItem="1ck-cC-XuT" secondAttribute="trailing" id="uwS-Kg-Wo8"/>
+                <constraint firstItem="AyJ-3M-LMJ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ve5-iz-ve9"/>
+                <constraint firstItem="AyJ-3M-LMJ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="46" id="xUk-WU-une"/>
+                <constraint firstItem="1ck-cC-XuT" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="yRF-mk-73y"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="amountLabel" destination="m9p-rw-JRt" id="SDt-Sp-CUS"/>
+                <outlet property="cellNumberLabel" destination="sEl-kQ-Wb8" id="DEN-LK-MlI"/>
+                <outlet property="chargeTypeLabel" destination="AyJ-3M-LMJ" id="do3-fF-Zff"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="53"/>
+        </view>
+    </objects>
+</document>

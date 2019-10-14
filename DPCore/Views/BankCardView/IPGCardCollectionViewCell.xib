@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="IRANYekanLight.ttf">
+            <string>IRANYekan-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" semanticContentAttribute="forceRightToLeft" reuseIdentifier="IPGCardCollectionCellId" id="1QB-NC-KgQ" customClass="IPGCardCollectionViewCell" customModule="DPCore" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="489" height="198"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="489" height="198"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" translatesAutoresizingMaskIntoConstraints="NO" id="V5p-4C-6SQ" customClass="GradientView" customModule="DPCore" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="489" height="198"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" image="MediumFullLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Tab-LW-Vzc">
+                                <rect key="frame" x="194.5" y="16" width="99" height="99"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Tab-LW-Vzc" secondAttribute="height" multiplier="1:1" id="EJF-84-Qlr"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" semanticContentAttribute="forceRightToLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="انتخاب هوشمند درگاه پرداخت اینترنتی" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fHl-7L-bWP">
+                                <rect key="frame" x="16" y="157.5" width="457" height="24.5"/>
+                                <fontDescription key="fontDescription" name="IRANYekan-Light" family="IRANYekan" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="fHl-7L-bWP" firstAttribute="leading" secondItem="V5p-4C-6SQ" secondAttribute="leadingMargin" constant="8" id="5eO-NE-zSG"/>
+                            <constraint firstItem="fHl-7L-bWP" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Tab-LW-Vzc" secondAttribute="bottom" constant="20" id="JzN-z3-tpm"/>
+                            <constraint firstItem="Tab-LW-Vzc" firstAttribute="centerX" secondItem="V5p-4C-6SQ" secondAttribute="centerX" id="MhD-IB-4v0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fHl-7L-bWP" secondAttribute="trailing" constant="8" id="kEd-ln-9Jr"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="fHl-7L-bWP" secondAttribute="bottom" constant="8" id="l9V-wt-12j"/>
+                            <constraint firstItem="Tab-LW-Vzc" firstAttribute="height" secondItem="V5p-4C-6SQ" secondAttribute="height" multiplier="0.5" id="oHA-vR-Af0"/>
+                            <constraint firstItem="Tab-LW-Vzc" firstAttribute="top" secondItem="V5p-4C-6SQ" secondAttribute="topMargin" constant="8" id="qam-cP-Ml2"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="topColor">
+                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
+                                <color key="value" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="startPointX">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="startPointY">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="endPointX">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="endPointY">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="V5p-4C-6SQ" secondAttribute="trailing" id="19A-pb-GPP"/>
+                <constraint firstItem="V5p-4C-6SQ" firstAttribute="leading" secondItem="1QB-NC-KgQ" secondAttribute="leading" id="9pm-lV-ZlJ"/>
+                <constraint firstAttribute="bottom" secondItem="V5p-4C-6SQ" secondAttribute="bottom" id="oMi-os-ooE"/>
+                <constraint firstItem="V5p-4C-6SQ" firstAttribute="top" secondItem="1QB-NC-KgQ" secondAttribute="top" id="yy0-cI-Qc7"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="IaF-Pa-Sod"/>
+            <connections>
+                <outlet property="bgdView" destination="V5p-4C-6SQ" id="ixq-ES-BYB"/>
+                <outlet property="logoImageView" destination="Tab-LW-Vzc" id="CMA-ev-gsU"/>
+            </connections>
+            <point key="canvasLocation" x="19.5" y="47"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="MediumFullLogo" width="120" height="120"/>
+    </resources>
+</document>

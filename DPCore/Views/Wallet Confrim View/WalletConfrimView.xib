@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="IRANYekanLight.ttf">
+            <string>IRANYekan-Light</string>
+        </array>
+        <array key="IRANYekanRegular.ttf">
+            <string>IRANYekan</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" id="iN0-l3-epB" customClass="WalletConfrimView" customModule="DPCore" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="382"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" semanticContentAttribute="forceRightToLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تایید پرداخت" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m8d-gy-8QV">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                    <fontDescription key="fontDescription" name="IRANYekan-Light" family="IRANYekan" pointSize="18"/>
+                    <color key="textColor" red="0.1019607843" green="0.1019607843" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" translatesAutoresizingMaskIntoConstraints="NO" id="mkE-4u-SY3" userLabel="topSeparator">
+                    <rect key="frame" x="0.0" y="65" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="ROT-AJ-fmh"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" semanticContentAttribute="forceRightToLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="آیا مایل به پرداخت از کیف پول خود هستید؟" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBW-5w-Gma">
+                    <rect key="frame" x="0.0" y="73" width="375" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="sCl-Mi-au8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="IRANYekan" family="IRANYekan" pointSize="14"/>
+                    <color key="textColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" translatesAutoresizingMaskIntoConstraints="NO" id="R5z-dH-Jz9">
+                    <rect key="frame" x="16" y="106" width="343" height="136"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="136" id="NaQ-zx-rko"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" translatesAutoresizingMaskIntoConstraints="NO" id="gCd-8H-lMv" userLabel="BottomSeparator">
+                    <rect key="frame" x="0.0" y="258" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="8GH-tR-ByZ"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gaE-tZ-SHT">
+                    <rect key="frame" x="16" y="267" width="152" height="107"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8p-LW-HFi">
+                            <rect key="frame" x="110" y="35" width="42" height="37"/>
+                            <fontDescription key="fontDescription" name="IRANYekan" family="IRANYekan" pointSize="14"/>
+                            <state key="normal" title="انصراف">
+                                <color key="titleColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="cancelAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="OYh-3r-39m"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w4L-gX-02F">
+                            <rect key="frame" x="0.0" y="35" width="90" height="37"/>
+                            <fontDescription key="fontDescription" name="IRANYekan" family="IRANYekan" pointSize="14"/>
+                            <state key="normal" title="تایید و پرداخت">
+                                <color key="titleColor" red="0.23921568630000001" green="0.31764705879999999" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </state>
+                            <connections>
+                                <action selector="confrimAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="eN3-OQ-XfG"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="R5z-dH-Jz9" secondAttribute="trailing" constant="16" id="27v-z0-lTS"/>
+                <constraint firstItem="mkE-4u-SY3" firstAttribute="top" secondItem="m8d-gy-8QV" secondAttribute="bottom" id="3gJ-eB-r85"/>
+                <constraint firstItem="yBW-5w-Gma" firstAttribute="leading" secondItem="mkE-4u-SY3" secondAttribute="leading" id="6eK-B2-Kfa"/>
+                <constraint firstItem="gCd-8H-lMv" firstAttribute="top" secondItem="R5z-dH-Jz9" secondAttribute="bottom" constant="16" id="6pn-7I-L0G"/>
+                <constraint firstItem="yBW-5w-Gma" firstAttribute="trailing" secondItem="mkE-4u-SY3" secondAttribute="trailing" id="AZ4-0K-QWB"/>
+                <constraint firstItem="yBW-5w-Gma" firstAttribute="leading" secondItem="m8d-gy-8QV" secondAttribute="leading" id="BUf-5C-Mgi"/>
+                <constraint firstItem="m8d-gy-8QV" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Dhq-uv-aKi"/>
+                <constraint firstItem="yBW-5w-Gma" firstAttribute="trailing" secondItem="m8d-gy-8QV" secondAttribute="trailing" id="H4K-HS-IHR"/>
+                <constraint firstItem="gaE-tZ-SHT" firstAttribute="top" secondItem="gCd-8H-lMv" secondAttribute="bottom" constant="8" symbolic="YES" id="Idz-zK-RGH"/>
+                <constraint firstItem="yBW-5w-Gma" firstAttribute="leading" secondItem="gCd-8H-lMv" secondAttribute="leading" id="JEz-oK-s9X"/>
+                <constraint firstItem="m8d-gy-8QV" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="OWT-WE-xvp"/>
+                <constraint firstItem="m8d-gy-8QV" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="RUl-Vf-fUI"/>
+                <constraint firstItem="gaE-tZ-SHT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="ShS-63-ZmK"/>
+                <constraint firstItem="yBW-5w-Gma" firstAttribute="top" secondItem="m8d-gy-8QV" secondAttribute="bottom" constant="8" symbolic="YES" id="VGE-2N-xqY"/>
+                <constraint firstAttribute="trailing" secondItem="gaE-tZ-SHT" secondAttribute="trailing" constant="16" id="b5q-xK-dlQ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="gaE-tZ-SHT" secondAttribute="bottom" constant="8" id="b9z-jA-QfE"/>
+                <constraint firstItem="R5z-dH-Jz9" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="bo2-La-ned"/>
+                <constraint firstItem="R5z-dH-Jz9" firstAttribute="top" secondItem="yBW-5w-Gma" secondAttribute="bottom" constant="8" symbolic="YES" id="hGx-9O-eg0"/>
+                <constraint firstItem="yBW-5w-Gma" firstAttribute="trailing" secondItem="gCd-8H-lMv" secondAttribute="trailing" id="umY-OO-bfG"/>
+                <constraint firstItem="m8d-gy-8QV" firstAttribute="height" secondItem="vUN-kp-3ea" secondAttribute="height" multiplier="0.17" id="xRD-Z2-bXb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="cancelButton" destination="g8p-LW-HFi" id="YBj-ax-beP"/>
+                <outlet property="cardContainerView" destination="R5z-dH-Jz9" id="22l-wL-p0B"/>
+                <outlet property="confirmButton" destination="w4L-gX-02F" id="7cG-9p-AXp"/>
+            </connections>
+        </view>
+    </objects>
+</document>

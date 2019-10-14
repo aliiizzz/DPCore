@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="IRANYekanRegular.ttf">
+            <string>IRANYekan</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" id="iN0-l3-epB" customClass="BankCardViewCell" customModule="DPCore" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="489" height="198"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" translatesAutoresizingMaskIntoConstraints="NO" id="lyB-s2-dVE" customClass="BankCardGradientsView" customModule="DPCore" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="489" height="198"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="topColor">
+                            <color key="value" red="1" green="0.40000000000000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
+                            <color key="value" red="0.80000000000000004" green="0.32156862749999998" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" translatesAutoresizingMaskIntoConstraints="NO" id="Tfi-sz-fHM" customClass="RoundedView" customModule="DPCore" customModuleProvider="target">
+                    <rect key="frame" x="415" y="0.0" width="66" height="70"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" translatesAutoresizingMaskIntoConstraints="NO" id="AoD-3G-TR2" customClass="GradientView" customModule="DPCore" customModuleProvider="target">
+                            <rect key="frame" x="2" y="6" width="62" height="62"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                    <color key="value" white="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="topColor">
+                                    <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
+                                    <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="shadowBlur">
+                                    <real key="value" value="4"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="shadowY">
+                                    <real key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="shadowX">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="28.25"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bank" translatesAutoresizingMaskIntoConstraints="NO" id="E2s-4Y-RDw" customClass="RoundedImageView" customModule="DPCore" customModuleProvider="target">
+                            <rect key="frame" x="2" y="6" width="62" height="62"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="E2s-4Y-RDw" secondAttribute="height" multiplier="1:1" id="BQi-tb-mhb"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="E2s-4Y-RDw" secondAttribute="trailing" constant="2" id="2xn-Zt-L7H"/>
+                        <constraint firstItem="AoD-3G-TR2" firstAttribute="height" secondItem="E2s-4Y-RDw" secondAttribute="height" id="AZf-Ij-1fK"/>
+                        <constraint firstItem="AoD-3G-TR2" firstAttribute="centerX" secondItem="E2s-4Y-RDw" secondAttribute="centerX" id="EYf-8H-Rcu"/>
+                        <constraint firstItem="E2s-4Y-RDw" firstAttribute="leading" secondItem="Tfi-sz-fHM" secondAttribute="leading" constant="2" id="P4Q-lT-iQY"/>
+                        <constraint firstItem="AoD-3G-TR2" firstAttribute="centerY" secondItem="E2s-4Y-RDw" secondAttribute="centerY" id="hok-g1-YDi"/>
+                        <constraint firstItem="AoD-3G-TR2" firstAttribute="width" secondItem="E2s-4Y-RDw" secondAttribute="width" id="oN4-i4-uKB"/>
+                        <constraint firstAttribute="bottom" secondItem="E2s-4Y-RDw" secondAttribute="bottom" constant="2" id="ox8-p3-yh9"/>
+                        <constraint firstItem="E2s-4Y-RDw" firstAttribute="top" secondItem="Tfi-sz-fHM" secondAttribute="top" constant="6" id="pbP-A1-gK2"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="size" keyPath="cornerRadiusSize">
+                            <size key="value" width="25" height="25"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="roundedBackground">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" semanticContentAttribute="forceRightToLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tDJ-Pr-OXj" userLabel="bankName">
+                    <rect key="frame" x="369" y="23.5" width="34" height="24.5"/>
+                    <fontDescription key="fontDescription" name="IRANYekan" family="IRANYekan" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="HJR-2f-WpA" userLabel="bottomContainer">
+                    <rect key="frame" x="0.0" y="131.5" width="489" height="50.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" semanticContentAttribute="forceRightToLeft" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="تاریخ انقضا" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbP-1H-jNc" userLabel="ExpTitle">
+                            <rect key="frame" x="16" y="0.0" width="212" height="22.5"/>
+                            <fontDescription key="fontDescription" name="IRANYekan" family="IRANYekan" pointSize="13"/>
+                            <color key="textColor" white="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" semanticContentAttribute="forceRightToLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="دارنده کارت" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uds-3i-5G8" userLabel="CardOwnerTitle">
+                            <rect key="frame" x="228" y="0.0" width="245" height="17.5"/>
+                            <fontDescription key="fontDescription" name="IRANYekan" family="IRANYekan" pointSize="10"/>
+                            <color key="textColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" semanticContentAttribute="forceRightToLeft" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1sf-Cb-UYr" userLabel="CardOwnerName">
+                            <rect key="frame" x="228" y="17.5" width="245" height="33"/>
+                            <fontDescription key="fontDescription" name="IRANYekan" family="IRANYekan" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" semanticContentAttribute="forceRightToLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YHl-ke-alC" userLabel="ExpDate">
+                            <rect key="frame" x="16" y="22.5" width="204" height="28"/>
+                            <fontDescription key="fontDescription" name="IRANYekan" family="IRANYekan" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Uds-3i-5G8" firstAttribute="width" secondItem="HJR-2f-WpA" secondAttribute="width" multiplier="0.5" id="1Ki-Gc-qlj"/>
+                        <constraint firstItem="1sf-Cb-UYr" firstAttribute="leading" secondItem="HJR-2f-WpA" secondAttribute="leading" constant="16" id="32Q-8Z-4wX"/>
+                        <constraint firstItem="YHl-ke-alC" firstAttribute="leading" secondItem="1sf-Cb-UYr" secondAttribute="trailing" constant="8" id="9FX-q8-4yN"/>
+                        <constraint firstAttribute="bottom" secondItem="YHl-ke-alC" secondAttribute="bottom" id="AG0-NI-y9N"/>
+                        <constraint firstAttribute="trailing" secondItem="YHl-ke-alC" secondAttribute="trailing" constant="16" id="AmL-cz-fuY"/>
+                        <constraint firstItem="1sf-Cb-UYr" firstAttribute="top" secondItem="Uds-3i-5G8" secondAttribute="bottom" id="DED-SB-t3Z"/>
+                        <constraint firstItem="Uds-3i-5G8" firstAttribute="leading" secondItem="HJR-2f-WpA" secondAttribute="leading" constant="16" id="NM4-ZL-K37"/>
+                        <constraint firstItem="wbP-1H-jNc" firstAttribute="leading" secondItem="Uds-3i-5G8" secondAttribute="trailing" id="Rw8-R4-7gj"/>
+                        <constraint firstItem="YHl-ke-alC" firstAttribute="top" secondItem="wbP-1H-jNc" secondAttribute="bottom" id="VP2-vZ-ivV"/>
+                        <constraint firstItem="Uds-3i-5G8" firstAttribute="top" secondItem="HJR-2f-WpA" secondAttribute="top" id="YEn-If-Fve"/>
+                        <constraint firstAttribute="trailing" secondItem="wbP-1H-jNc" secondAttribute="trailing" constant="16" id="Ya5-BN-ZcG"/>
+                        <constraint firstAttribute="bottom" secondItem="1sf-Cb-UYr" secondAttribute="bottom" id="Ze9-5h-uj8"/>
+                        <constraint firstItem="wbP-1H-jNc" firstAttribute="top" secondItem="HJR-2f-WpA" secondAttribute="top" id="kQO-hY-Ovo"/>
+                        <constraint firstItem="1sf-Cb-UYr" firstAttribute="width" secondItem="HJR-2f-WpA" secondAttribute="width" multiplier="0.5" id="z2r-Hp-ymS"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" semanticContentAttribute="forceRightToLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJN-gx-izb" userLabel="cardNumber">
+                    <rect key="frame" x="213.5" y="68.5" width="63" height="63"/>
+                    <fontDescription key="fontDescription" name="IRANYekan" family="IRANYekan" pointSize="26"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="RzV-UR-kDq">
+                    <rect key="frame" x="226" y="80.5" width="37" height="37"/>
+                    <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </activityIndicatorView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="HJR-2f-WpA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="14S-EK-yPS"/>
+                <constraint firstItem="tDJ-Pr-OXj" firstAttribute="top" relation="greaterThanOrEqual" secondItem="vUN-kp-3ea" secondAttribute="top" id="24J-ao-eoZ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="tDJ-Pr-OXj" secondAttribute="trailing" constant="16" id="4s0-S8-Dae"/>
+                <constraint firstItem="RzV-UR-kDq" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="5UJ-1o-Vvu"/>
+                <constraint firstItem="lyB-s2-dVE" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="6CW-H3-rx8"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="HJR-2f-WpA" secondAttribute="bottom" constant="16" id="6mW-2k-rDZ"/>
+                <constraint firstItem="Tfi-sz-fHM" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="6t1-sZ-h56"/>
+                <constraint firstItem="RzV-UR-kDq" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="CW0-zL-fyN"/>
+                <constraint firstItem="uJN-gx-izb" firstAttribute="firstBaseline" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Edo-ds-Y1k"/>
+                <constraint firstItem="tDJ-Pr-OXj" firstAttribute="centerY" secondItem="Tfi-sz-fHM" secondAttribute="centerY" id="JbN-bc-AnM"/>
+                <constraint firstItem="uJN-gx-izb" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="MXV-y8-QSF"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="lyB-s2-dVE" secondAttribute="trailing" id="Mwi-ab-qca"/>
+                <constraint firstItem="HJR-2f-WpA" firstAttribute="top" secondItem="uJN-gx-izb" secondAttribute="bottom" id="Qc5-gZ-7Fn"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="uJN-gx-izb" secondAttribute="trailing" constant="16" id="QgH-fR-Ga2"/>
+                <constraint firstItem="Tfi-sz-fHM" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="13.5%" id="SB8-mp-WVz"/>
+                <constraint firstItem="uJN-gx-izb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="TXY-A7-uKU"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="lyB-s2-dVE" secondAttribute="bottom" id="XNV-gs-EZg"/>
+                <constraint firstItem="tDJ-Pr-OXj" firstAttribute="leading" secondItem="Tfi-sz-fHM" secondAttribute="trailing" constant="12" id="d1g-fi-Tfu"/>
+                <constraint firstItem="Tfi-sz-fHM" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="35.3%" id="elm-nF-RAm"/>
+                <constraint firstItem="HJR-2f-WpA" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="k6b-uB-4A2"/>
+                <constraint firstItem="lyB-s2-dVE" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="qqt-tm-PmG"/>
+                <constraint firstItem="Tfi-sz-fHM" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="ua9-jE-S99"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="backView" destination="lyB-s2-dVE" id="YiT-D3-4g9"/>
+                <outlet property="bankLogo" destination="E2s-4Y-RDw" id="A3L-Wl-Lnm"/>
+                <outlet property="cardHolder" destination="1sf-Cb-UYr" id="atJ-hU-q66"/>
+                <outlet property="cardName" destination="tDJ-Pr-OXj" id="Tef-Wp-hyL"/>
+                <outlet property="cardNo" destination="uJN-gx-izb" id="Yc6-tB-u8x"/>
+                <outlet property="expireDate" destination="YHl-ke-alC" id="vwT-Pp-dKc"/>
+                <outlet property="loadingView" destination="RzV-UR-kDq" id="UGa-OS-ga9"/>
+                <outlet property="logoBackView" destination="Tfi-sz-fHM" id="hyV-ki-6HX"/>
+                <outlet property="logoRoundedView" destination="AoD-3G-TR2" id="oOG-4u-HvO"/>
+            </connections>
+            <point key="canvasLocation" x="67" y="-181"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bank" width="24" height="24"/>
+    </resources>
+</document>
