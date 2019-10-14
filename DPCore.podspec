@@ -16,9 +16,9 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "DPCore"
-  s.version      = "0.0.1"
-  s.summary      = "A short description of DPCore."
-  s.description  = "A short description of DPCore."
+  s.version      = "1.3.2"
+  s.summary      = "Digipay Payment SDK"
+  s.description  = "Digipay Payment SDK"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -50,7 +50,7 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "Amir Hesam Rayatnia" => "h.rayatnia@gmail.com" }
+  s.author             = { "Alireza Abdolalipoor" => "alireza.abdolalipoor@gmail.com" }
   # Or just: s.author    = "Amir Hesam Rayatnia"
   # s.authors            = { "Amir Hesam Rayatnia" => "h.rayatnia@gmail.com" }
   # s.social_media_url   = "http://twitter.com/Amir Hesam Rayatnia"
@@ -62,7 +62,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  s.platform     = :ios, "10.0"
+  s.platform     = :ios, "9.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -77,7 +77,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :path => '.' }
+  s.source       = { :git => 'https://github.com/aliiizzz/DPCore.git' }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,7 +91,7 @@ Pod::Spec.new do |s|
   s.source_files = "DPCore"
   s.exclude_files = "Classes/Exclude"
 
-  # s.public_header_files = "Classes/**/*.h"
+  s.public_header_files = "Classes/**/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
